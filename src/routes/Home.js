@@ -14,6 +14,7 @@ function Home(){
         ).json();
         setMovies(response.data.movies);
         setLoading(false);
+        console.log("gg");
     }
     useEffect(()=>{
         getMovie();
