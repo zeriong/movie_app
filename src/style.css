@@ -3,6 +3,15 @@
     50%{opacity: 1;}
     100%{opacity: 0; visibility: hidden;}
 }
+a{
+    text-decoration: none;
+    color: white;
+    font-size: clamp(0px,4vw,30px)!important;
+}
+body{
+    background-color: #212121;
+    color: white;
+}
 .welcome{
     box-sizing: border-box;
     display: flex;
@@ -17,6 +26,7 @@
     animation-name: welcome;
     animation-duration: 3s;
     visibility: hidden;
+    z-index: 2;
 }
 .welcome-head{
     position: absolute;
@@ -38,4 +48,14 @@
     font-size: clamp(0px,1vw,20px);
     line-height: 1.5;
     padding-top: 50px;
+}
+.loading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #606060;
+    font-size: 70px;
+    font-weight: 800;
+    z-index: 1;
 }
