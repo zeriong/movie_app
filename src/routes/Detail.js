@@ -9,13 +9,13 @@ function Detail(){
         const response = await (
             await fetch(
                 `https:yts.mx/api/v2/movie_details.json?movie_id=${id}`)
-        ).json()
+        ).json();
         setMovies(response.data.movie);
         setLoading(false);
     };
     useEffect(()=> {
-        getMovie();
-    },[]);
+        getMovie().then();
+    },[getMovie]);
     return (
         <div className="detail-container">
             { loading ? (<h1 className="loading">Loading...</h1>) : (
