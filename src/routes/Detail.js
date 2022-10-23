@@ -25,7 +25,7 @@ function Detail(){
                     alignItems:"center",
                 }}>
                     <div className="back">
-                        <Link to={`/`}>
+                        <Link to={`${process.env.PUBLIC_URL}/`}>
                             <div style={{position:"relative", left:"28px"}}>
                                 Back
                             </div>
