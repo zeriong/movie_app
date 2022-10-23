@@ -12,15 +12,17 @@ function Movie({id,coverImg, title, summary, genres}){
                     </Link>
                 </h2>
                 <p className="movie-summary">{summary.length > 235 ? `${summary.slice(0, 235)}...` : summary}</p>
-                <ul className="movie-genres">
-                    <h1 style={{paddingRight:"6px",fontWeight:"bold"}}>Genres : </h1>
-                    {genres.map((g)=> (
-                        <li style={{padding:"0 7px"}} key={g}>{g}</li>
-                    ))}
-                </ul>
+                <div>
+                    <ul className="movie-genres">
+                        <h1 style={{paddingRight:"6px",fontWeight:"bold", height:"12px"}}>Genres : </h1>
+                        {genres.map((g)=> (
+                            <li style={{padding:"0 7px"}} key={g}>{g}</li>
+                        ))}
+                    </ul>
+                </div>
                 <h1 className="click-title">
                     <Link to={`/movie/${id}`}>
-                        Details & Download : Click to Title or here.
+                        Details & Download Click here.
                     </Link>
                 </h1>
             </div>
