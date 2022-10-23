@@ -3,13 +3,18 @@
     50%{opacity: 1;}
     100%{opacity: 0; visibility: hidden;}
 }
-a{
-    text-decoration: none;
-    color: white;
-    font-size: clamp(0px,4vw,30px)!important;
+.header{
+    width: auto;
+    font-size: 200px;
+    color: red;
+    font-weight: 800;
+    text-align: center;
+    padding: 50px 0;
+    margin-bottom: 100px;
+    cursor: pointer;
 }
 body{
-    background-color: #212121;
+    background-color: #101010;
     color: white;
 }
 .welcome{
@@ -54,8 +59,58 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    color: #606060;
+    color: #e0e0e0;
     font-size: 70px;
     font-weight: 800;
     z-index: 1;
+}
+.movie-wrap{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 80px;
+    width: 70%;
+    margin: auto;
+}
+.movie-content{
+    position: relative;
+    width: 80%;
+    height: auto;
+    display: flex;
+    gap: 30px;
+    padding: 50px;
+    margin: 30px;
+    background-color: #2a2a2a;
+    border: 1px transparent solid;
+    border-radius: 30px;
+    box-shadow: 0 13px 27px -5px #000
+}
+.click-title a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    background-color: #606060;
+    border-radius: 20px;
+    text-align: center;
+    position: absolute;
+    bottom: 50px;
+    width: 450px;
+    font-size: 20px!important;
+    cursor: pointer;
+    box-shadow: 0 3px 8px -6px #000
+}
+.movie-title a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: clamp(0px,4vw,35px)!important;
+    font-weight: 800!important;
+}
+.movie-summary{
+    padding-top: 50px;
+    font-size: 20px;
+    line-height: 1.2;
+}
+.movie-genres{
+    display: flex;
+    position: absolute;
+    bottom: 100px;
 }

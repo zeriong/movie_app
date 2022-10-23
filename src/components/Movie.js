@@ -3,19 +3,27 @@ import { Link }from "react-router-dom";
 
 function Movie({id,coverImg, title, summary, genres}){
     return (
-        <div>
+        <div className="movie-content">
             <img src={coverImg} alt={title}/>
-            <h2>
-                <Link to={`/movie/${id}`}>
-                    {title}
-                </Link>
-            </h2>
-            <p>{summary}</p>
-            <ul>
-                {genres.map((g)=> (
-                    <li key={g}>{g}</li>
-                ))}
-            </ul>
+            <div style={{height:"100%"}}>
+                <h2 className="movie-title">
+                    <Link to={`/movie/${id}`}>
+                        {title}
+                    </Link>
+                </h2>
+                <p className="movie-summary">{summary.length > 235 ? `${summary.slice(0, 235)}...` : summary}</p>
+                <ul className="movie-genres">
+                    <h1 style={{paddingRight:"6px",fontWeight:"bold"}}>Genres : </h1>
+                    {genres.map((g)=> (
+                        <li style={{padding:"0 7px"}} key={g}>{g}</li>
+                    ))}
+                </ul>
+                <h1 className="click-title">
+                    <Link to={`/movie/${id}`}>
+                        Details : Click to Title or here.
+                    </Link>
+                </h1>
+            </div>
         </div>
     );
 }
