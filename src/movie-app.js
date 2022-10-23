@@ -1,6 +1,3 @@
-//import {useEffect, useState} from "react";
-//import {findByLabelText} from "@testing-library/react";
-//import Movie from "./components/Movie";
 import React from "react";
 
 import {
