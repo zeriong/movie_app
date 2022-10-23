@@ -17,6 +17,14 @@ body{
     background-color: #101010;
     color: white;
 }
+.bg-wrap{
+    background-color: #101010;
+    position: relative;
+}
+.bg-wrap::after{
+    content: "";
+    background-image: url("public/bg.jpg");
+}
 .welcome{
     box-sizing: border-box;
     display: flex;

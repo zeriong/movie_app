@@ -19,8 +19,8 @@ function Detail(){
     return (
         <div>
             { loading ? (<h1 className="loading">Loading...</h1>) : (
-                <div>
-                    <img src={movie.large_cover_image}/>
+                <div className="detail-container">
+                    <img src={movie.large_cover_image} alt="detail-img"/>
                     <h1>{movie.title_long}</h1>
                     <h2>{`Genres : ${movie.genres}`}</h2>
                     <h2>{`Runtime : ${movie.runtime} Minutes`}</h2>
