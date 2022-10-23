@@ -8,7 +8,7 @@ function Detail(){
     const getMovie = async ()=> {
         const response = await (
             await fetch(
-                `https:yts.mx/api/v2/movie_details.json?movie_id=${id}`)
+                `https://yts.mx/api/v2/movie_details.json?movie_id=${id}`)
         ).json();
         setMovies(response.data.movie);
         setLoading(false);
