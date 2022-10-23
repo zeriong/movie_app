@@ -4,8 +4,8 @@ import { Link }from "react-router-dom";
 function Movie({id,coverImg, title, summary, genres}){
     return (
         <div className="movie-content">
-            <img src={coverImg} alt={title}/>
-            <div style={{height:"100%"}}>
+            <img className="movie-img" src={coverImg} alt={title}/>
+            <div className="movie-inner">
                 <h2 className="movie-title">
                     <Link to={`/movie/${id}`}>
                         {title}
@@ -20,7 +20,7 @@ function Movie({id,coverImg, title, summary, genres}){
                 </ul>
                 <h1 className="click-title">
                     <Link to={`/movie/${id}`}>
-                        Details : Click to Title or here.
+                        Details & Download : Click to Title or here.
                     </Link>
                 </h1>
             </div>
