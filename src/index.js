@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import MovieApp from './movie-app';
+import "./reset.css";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

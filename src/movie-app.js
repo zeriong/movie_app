@@ -11,7 +11,6 @@ function MovieApp() {
     return (
         <Router>
             <Routes>
-                <Route path="/hi" element={<div>hi 에이치아이~~~</div>}/>
                 <Route path="/movie/:id" element={<Detail/>}/>
                 <Route path={`${process.env.PUBLIC_URL}/`} element={<Home/>}/>
             </Routes>
