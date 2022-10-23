@@ -25,10 +25,17 @@
     font-size: clamp(0px,5.5vw,100px);
     top: 50%;
     transform: translateY(-50%);
+    font-weight: 800;
 }
 .welcome-content{
     margin: auto;
-    font-size: clamp(0px,2vw,40px);
+    font-size: clamp(0px,1.8vw,38px);
     line-height: 1.5;
     padding-top: 100px;
+}
+.welcome-tail{
+    margin: auto;
+    font-size: clamp(0px,1vw,20px);
+    line-height: 1.5;
+    padding-top: 50px;
 }
