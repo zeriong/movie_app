@@ -21,7 +21,7 @@ function Movie({id,coverImg, title, summary, genres}){
                     </ul>
                 </div>
                 <h1 className="click-title">
-                    <Link to={`/movie/${id}`}>
+                    <Link to={`${process.env.PUBLIC_URL}/movie/${id}`}>
                         Details & Download Click here.
                     </Link>
                 </h1>
